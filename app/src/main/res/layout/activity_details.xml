@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/image"/>
+
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+
+    android:id="@+id/first_name"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/image"
+    android:textColorHint="@color/black"
+
+    android:hint="first name"
+    android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/last_name"
+        android:layout_marginTop="20dp"
+        android:hint="last name"
+        android:textColorHint="@color/black"
+
+        android:layout_below="@+id/first_name"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/email"
+        android:layout_marginTop="20dp"
+        android:hint="email"
+        android:textColorHint="@color/black"
+
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/last_name"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:hint="phone"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/email"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/upload_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
+</RelativeLayout>
